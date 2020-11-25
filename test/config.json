@@ -1,0 +1,30 @@
+{
+  "prometheusUrl": "http://thanos-query.app.com",
+  "limit": 500,
+  "burst": 600,
+  "metricCfg": [{
+    "rawMetric": "OK",
+    "RealMetric": "up{app=\"istiod\",cluster=\"paas-k8sprod-qa\",instance=\"10.237.33.4:15014\",job=\"istio-pilot\"}",
+    "expectedResNum": 1
+  },
+    {
+      "rawMetric": "UNEXPECT_RESULT_NUM",
+      "RealMetric": "up{app=\"istiod\",cluster=\"paas-k8sprod-qa\",instance=\"10.237.33.4:15014\",job=\"istio-pilot\"}",
+      "expectedResNum": 10
+    },
+    {
+      "rawMetric": "NO_EXIST",
+      "RealMetric": "not_exist{app=\"istiod\",cluster=\"paas-k8sprod-qa\",instance=\"10.237.33.4:15014\",job=\"istio-pilot\"}",
+      "expectedResNum": 1
+    },
+    {
+      "rawMetric": "ERR_METRIC_FORMAT",
+      "RealMetric": "134123{\\43432}",
+      "expectedResNum": 1
+    },
+    {
+      "rawMetric": "isDOWN",
+      "RealMetric": "DOWB",
+      "expectedResNum": 2
+    }]
+}

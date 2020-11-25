@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheusservice
+  namespace: default
+  labels:
+    app: prometheus-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prometheus-service
+  template:
+    metadata:
+      labels:
+        app: prometheus-service
+    spec:
+      containers:
+        - name: prometheus-service
+          image: docker.io/library/prometheusservice:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 19090
+          volumeMounts:
+            - name: config-volume
+              mountPath: /root
+      volumes:
+        - name: config-volume
+          configMap:
+            name: prometheusservice

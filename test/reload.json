@@ -1,0 +1,10 @@
+{
+  "prometheusUrl": "http://thanos-query.app.com",
+  "limit": 500,
+  "burst": 600,
+  "metricCfg": [{
+    "rawMetric": "NEW_METRIC",
+    "RealMetric": "up{app=\"istiod\",cluster=\"paas-k8sprod-qa\",instance=\"10.237.33.4:15014\",job=\"istio-pilot\"}",
+    "expectedResNum": 1
+    }]
+}

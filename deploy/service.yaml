@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: prometheusservice
+  namespace: default
+spec:
+  selector:
+    app: prometheus-service
+  ports:
+    - name: prometheus-service
+      port: 19090
+      protocol: TCP
+      targetPort: 19090
+  type: ClusterIP

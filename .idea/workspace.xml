@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="535e8b17-33aa-4d69-9631-2a91581ec8f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,10 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="2618" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606269941084">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2618" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1606269941084" />
     <state x="2581" y="252" width="598" height="536" key="find.popup" timestamp="1606269617723">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
